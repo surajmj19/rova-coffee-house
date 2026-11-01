@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROVA Coffee House | Coffee, Matcha & Freshly Baked Treats</title>
+
+    <meta
+      name="description"
+      content="Discover handcrafted coffee, refreshing drinks, matcha and freshly baked treats at ROVA Coffee House. Explore our menu and find your new favourite."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/icons/site.webmanifest" />
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="">
+      <div class="container header-container">
+        <div class="header-top">
+          <a href="#home" class="logo" aria-label="Go to home page">
+            <i class="ti ti-plant-2 logo__icon" aria-hidden="true"></i>
+            ROVA
+          </a>
+
+          <nav
+            id="primary-nav"
+            class="primary-nav"
+            aria-label="Primary Navigation"
+          >
+            <ul class="nav-list">
+              <li>
+                <a href="#home" class="nav-link is-current">Home</a>
+              </li>
+              <li>
+                <a href="#favourites" class="nav-link">Favourites</a>
+              </li>
+              <li>
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li>
+                <a href="#visit-us" class="nav-link">Visit Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Toogle -->
+          <button
+            id="toggle-nav"
+            class="toggle-nav"
+            type="button"
+            aria-label="Open Navigation"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <i class="ri-menu-line" aria-hidden="true"></i>
+          </button>
+
+          <!-- CTA -->
+          <a
+            href="https://wa.me/rova?text=Hi%20ROVA!%20I'd%20like%20to%20place%20an%20order."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--glass btn--sm primary-nav-cta"
+          >
+            <i class="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp
+          </a>
+        </div>
+
+        <div class="header-bottom">
+          <nav
+            id="mobile-nav"
+            class="mobile-nav"
+            aria-label="Mobile Navigation"
+          >
+            <ul class="nav-list">
+              <li>
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#favourites" class="nav-link">Favourites</a>
+              </li>
+              <li>
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li>
+                <a href="#visit-us" class="nav-link">Visit Us</a>
+              </li>
+            </ul>
+
+            <a
+              href="https://wa.me/rova?text=Hi%20ROVA!%20I'd%20like%20to%20place%20an%20order."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary btn--sm mobile-nav-cta"
+            >
+              <i class="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero" aria-label="Home">
+        <div class="hero-img">
+          <img src="./assets/images/nh.png" alt="Coffee and baked Food Image" />
+        </div>
+
+        <div class="container">
+          <div class="content-box">
+            <div class="eyebrow">PREMIUM COFFEE HOUSE</div>
+            <h1 class="head">Good Coffee. Good Life.</h1>
+            <p class="description description--lg description--body">
+              Rich flavours, fresh ingredients, and little moments worth
+              enjoying. Your favourite coffee is waiting.
+            </p>
+
+            <div class="cta-box">
+              <a
+                href="https://wa.me/rova?text=Hi%20ROVA!%20I'd%20like%20to%20place%20an%20order."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--primary"
+              >
+                <i class="ri-whatsapp-line" aria-hidden="true"></i>Order on
+                WhatsApp
+                <i class="ri-arrow-right-line" aria-hidden="true"></i>
+              </a>
+              <a href="#favourites" class="btn btn--ghost">
+                Explore Menu<i
+                  class="ri-arrow-right-line"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+            <div class="tag menu-hero-note">
+              <i class="ri-leaf-line" aria-hidden="true"></i>
+              Freshly Brewed · Made with Love · Served Fresh
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAV MENU -->
+      <section id="favourites" class="menu">
+        <div class="container">
+          <div class="section-top">
+            <div class="content-box">
+              <div class="eyebrow">FAVOURITES MENU</div>
+              <h2 class="section-title">Our Featured Menu.</h2>
+              <p class="description description--body">
+                Good taste in every cup. Find your new favourite.
+              </p>
+            </div>
+
+            <div>
+              <a href="./menu.html" class="btn btn--glass btn--sm btn--section">
+                View Full Menu
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="section-bottom">
+            <div class="grid card-container">
+              <!-- CARD -->
+              <div class="card cd-1">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/caramel-Iced-Latte.png"
+                    alt="Glass of ice caeamel latte image"
+                    class="card__img"
+                  />
+                </div>
+
+                <div class="card-inner-box">
+                  <div class="card__info">
+                    <span class="card-category">COFFEE</span>
+                    <p class="card__title">Iced Caramel Latte</p>
+                    <p class="description description--sm">
+                      Smooth espresso, cold milk and sweet caramel.
+                    </p>
+                    <div class="card-pricing">
+                      <p class="price">$5.50</p>
+                      <a
+                        href="https://wa.me/rova?text=Hi%20ROVA!%20I'd%20like%20to%20place%20an%20order."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card__btn"
+                        aria-label="Order on Whatsapp"
+                        title="Order on Whatsapp"
+                      >
+                        <i class="ri-add-large-line" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card cd-2">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/matcha-latte.png"
+                    alt="Glass of Matcha latte image"
+                    class="card__img"
+                  />
+                </div>
+
+                <div class="card-inner-box">
+                  <div class="card__info">
+                    <span class="card-category">TEA & MATCHA</span>
+                    <p class="card__title">Matcha Latte</p>
+                    <p class="description description--sm">
+                      Earthy matcha blended with creamy milk.
+                    </p>
+                    <div class="card-pricing">
+                      <p class="price">$5.00</p>
+                      <a
+                        href="https://wa.me/rova?text=Hi%20ROVA!%20I'd%20like%20to%20place%20an%20order."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card__btn"
+                        aria-label="Order on Whatsapp"
+                        title="Order on Whatsapp"
+                      >
+                        <i class="ri-add-large-line" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card cd-3">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/croissant.png"
+                    alt="Butter Croissant image"
+                    class="card__img"
+                  />
+                </div>
+
+                <div class="card-inner-box">
+                  <div class="card__info">
+                    <span class="card-category">BAKERY & DESSERTS</span>
+                    <p class="card__title">Butter Croissant</p>
+                    <p class="description description--sm">
+                      Golden, flaky and freshly baked.
+                    </p>
+                    <div class="card-pricing">
+                      <p class="price">$3.50</p>
+                      <a
+                        href="https://wa.me/rova?text=Hi%20ROVA!%20I'd%20like%20to%20place%20an%20order."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card__btn"
+                        aria-label="Order on Whatsapp"
+                        title="Order on Whatsapp"
+                      >
+                        <i class="ri-add-large-line" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card cd-4">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/chocolate-brownie.png"
+                    alt="Chocolate Brownie image"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card-inner-box">
+                  <div class="card__info">
+                    <span class="card-category">BAKERY & DESSERTS</span>
+                    <p class="card__title">Chocolate Brownie</p>
+                    <p class="description description--sm">
+                      Rich chocolate, soft centre, pure indulgence.
+                    </p>
+                    <div class="card-pricing">
+                      <p class="price">$4.00</p>
+                      <a
+                        href="https://wa.me/rova?text=Hi%20ROVA!%20I'd%20like%20to%20place%20an%20order."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card__btn"
+                        aria-label="Order on Whatsapp"
+                        title="Order on Whatsapp"
+                      >
+                        <i class="ri-add-large-line" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about">
+        <img
+          src="./assets/images/abt.png"
+          alt="Coffe and pastry image"
+          class="about-img"
+        />
+        <div class="container">
+          <div class="grid">
+            <div class="section-img">
+              <img
+                src="./assets/images/our-story.png"
+                alt="Making a coffee image"
+              />
+            </div>
+
+            <div class="content-box">
+              <div class="eyebrow">OUR STORY</div>
+              <h2 class="section-title">More Than Just Coffee.</h2>
+              <p class="description description--body">
+                At ROVA, we believe great coffee brings people together. From
+                the first sip to the last, every cup is made to make your day a
+                little better.
+              </p>
+
+              <ul class="specific-section">
+                <li>
+                  <i class="ri-check-line" aria-hidden="true"></i> Quality
+                  Ingredients
+                </li>
+                <li>
+                  <i class="ri-check-line" aria-hidden="true"></i> Crafted with
+                  Care
+                </li>
+                <li>
+                  <i class="ri-check-line" aria-hidden="true"></i> Made for Good
+                  Moments
+                </li>
+              </ul>
+
+              <a
+                href="https://wa.me/rova?text=Hi%20ROVA!%20I'd%20like%20to%20place%20an%20order."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--primary btn--section"
+              >
+                <i class="ri-whatsapp-line" aria-hidden="true"></i>
+                WhatsApp
+                <i class="ri-arrow-right-line" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VISIT US -->
+      <section id="visit-us" class="visit-us">
+        <div class="container">
+          <div class="grid">
+            <div class="content-box">
+              <div class="eyebrow">COME FIND US</div>
+              <h2 class="section-title">Visit ROVA Coffee House.</h2>
+              <p class="description description--body">
+                Good coffee tastes even better in good company. Drop by and make
+                yourself at home.
+              </p>
+
+              <div class="contact-info specific-section">
+                <i class="ri-map-pin-line" aria-hidden="true"></i>
+                <p class="contact-item">
+                  128 Willow Street, Brooklyn, NY 11201
+                </p>
+                <i class="ri-phone-line" aria-hidden="true"></i>
+                <p class="contact-item">+1 (555) 0143</p>
+                <i class="ri-mail-line" aria-hidden="true"></i>
+                <p class="contact-item">hello@rovacoffee.com</p>
+                <i class="ri-time-line" aria-hidden="true"></i>
+                <p class="contact-item">Monday – Sunday, 7 AM – 9 PM</p>
+              </div>
+
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=128+Willow+Street+Brooklyn+NY+11201"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--glass btn--section"
+              >
+                Get Directions
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="map">
+              <iframe
+                src="https://maps.google.com/maps?q=128%20Willow%20Street%2C%20Brooklyn%2C%20NY%2011201&output=embed"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                class="map-frame"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid">
+          <div class="footer-col">
+            <div>
+              <a href="#home" class="logo" aria-label="Go to home page">
+                <i class="ti ti-plant-2 logo__icon" aria-hidden="true"></i>
+                ROVA
+              </a>
+            </div>
+
+            <p class="title footer-title">Coffee. Food. Good Moments.</p>
+            <p class="description description--sm">
+              A little coffee, a little happiness.
+            </p>
+            <div class="cta-box footer-social">
+              <a
+                href="facebook.com/purespace"
+                class="social-link"
+                aria-label="Facebook"
+              >
+                <i class="ri-facebook-fill" aria-hidden="true"></i>
+              </a>
+              <a
+                href="instagram.com/purespace"
+                class="social-link"
+                aria-label="Instagram"
+              >
+                <i class="ri-instagram-fill" aria-hidden="true"></i>
+              </a>
+              <a
+                href="youtube.com/purespace"
+                class="social-link"
+                aria-label="YouTube"
+              >
+                <i class="ri-youtube-fill" aria-hidden="true"></i>
+              </a>
+              <a
+                href="tiktok.com/purespace"
+                class="social-link"
+                aria-label="TikTok"
+              >
+                <i class="ri-tiktok-fill" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Contact</h3>
+            <p>WhatsApp: +1 (555) 0143</p>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Opening Hours</h3>
+            <p>Monday – Sunday</p>
+            <p>7:00 AM – 9:00 PM</p>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Quick Links</h3>
+            <nav aria-label="Footer Navigation">
+              <ul class="nav-list">
+                <li>
+                  <a href="#home" class="footer-link">Home</a>
+                </li>
+                <li>
+                  <a href="#favourites" class="footer-link">Favourites</a>
+                </li>
+                <li>
+                  <a href="#about" class="footer-link">About</a>
+                </li>
+                <li>
+                  <a href="#visit-us" class="footer-link">Visit Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>© 2026 ROVA Coffee House, Suraj Madhushan</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

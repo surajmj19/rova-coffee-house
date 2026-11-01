@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Our Menu | ROVA Coffee House</title>
+
+    <meta
+      name="description"
+      content="Explore the ROVA Coffee House menu, featuring espresso, lattes, iced drinks, matcha, croissants, brownies and more."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/icons/site.webmanifest" />
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Existing website styles -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Menu page styles -->
+    <link rel="stylesheet" href="./menu.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container header-container">
+        <div class="header-top">
+          <a href="./index.html#home" class="logo" aria-label="Go to home page">
+            <i class="ti ti-plant-2 logo__icon" aria-hidden="true"></i>
+            ROVA
+          </a>
+
+          <nav
+            id="primary-nav"
+            class="primary-nav"
+            aria-label="Primary Navigation"
+          >
+            <ul class="nav-list">
+              <li>
+                <a href="./index.html#home" class="nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#menu" class="nav-link is-current">Menu</a>
+              </li>
+              <li>
+                <a href="./index.html#about" class="nav-link">About</a>
+              </li>
+              <li>
+                <a href="./index.html#visit-us" class="nav-link">Visit Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Toogle -->
+          <button
+            id="toggle-nav"
+            class="toggle-nav"
+            type="button"
+            aria-label="Open Navigation"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <i class="ri-menu-line" aria-hidden="true"></i>
+          </button>
+
+          <!-- CTA -->
+          <a
+            href="https://wa.me/rova?text=Hi%20ROVA!%20I'd%20like%20to%20place%20an%20order."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--glass btn--sm primary-nav-cta"
+          >
+            <i class="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp
+          </a>
+        </div>
+
+        <div class="header-bottom">
+          <nav
+            id="mobile-nav"
+            class="mobile-nav"
+            aria-label="Mobile Navigation"
+          >
+            <ul class="nav-list">
+              <li>
+                <a href="./index.html#home" class="nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#menu" class="nav-link is-current">Menu</a>
+              </li>
+              <li>
+                <a href="./index.html#about" class="nav-link">About</a>
+              </li>
+              <li>
+                <a href="./index.html#visit-us" class="nav-link">Visit Us</a>
+              </li>
+            </ul>
+
+            <a
+              href="https://wa.me/rova?text=Hi%20ROVA!%20I'd%20like%20to%20place%20an%20order."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary btn--sm mobile-nav-cta"
+            >
+              <i class="ri-whatsapp-line" aria-hidden="true"></i> WhatsApp
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- MENU INTRO -->
+      <section class="menu-hero">
+        <div class="container">
+          <div class="content-box">
+            <div class="eyebrow">FRESHLY MADE, JUST FOR YOU</div>
+            <h1 class="head">A Taste of ROVA.</h1>
+            <p class="description description--body">
+              From your favourite morning coffee to something sweet for the
+              afternoon. Find something you'll love.
+            </p>
+
+            <div class="tag menu-hero-note">
+              <i class="ri-leaf-line" aria-hidden="true"></i>
+              Freshly Brewed · Made with Love · Served Fresh
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FULL MENU -->
+      <section id="menu" class="menu menu-page">
+        <div class="container">
+          <div class="section-top menu-heading">
+            <div class="content-box">
+              <span class="eyebrow">EXPLORE OUR SELECTION</span>
+              <h2 class="section-title">Made to Be Enjoyed.</h2>
+              <p class="description description--body">
+                Discover our selection of handcrafted drinks and freshly
+                prepared treats.
+              </p>
+            </div>
+
+            <a
+              href="./index.html#favourites"
+              class="btn btn--glass btn--sm btn--section"
+            >
+              <i class="ri-arrow-left-line" aria-hidden="true"></i>
+              Back to Home
+            </a>
+          </div>
+
+          <!-- CATEGORY FILTERS -->
+          <div class="menu-filters" role="group" aria-label="Filter menu items">
+            <button
+              class="filter-btn is-active"
+              type="button"
+              data-filter="all"
+            >
+              All Items
+            </button>
+            <button class="filter-btn" type="button" data-filter="coffee">
+              Coffee
+            </button>
+            <button class="filter-btn" type="button" data-filter="cold">
+              Cold Drinks
+            </button>
+            <button class="filter-btn" type="button" data-filter="tea">
+              Tea & Matcha
+            </button>
+            <button class="filter-btn" type="button" data-filter="bakery">
+              Bakery & Desserts
+            </button>
+          </div>
+
+          <!-- MENU GRID -->
+          <div class="grid menu-grid" id="menu-grid">
+            <!-- COFFEE -->
+
+            <article class="card" data-category="coffee">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/espresso.png"
+                  alt="Fresh espresso"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">COFFEE</span>
+                  <h3 class="card__title">Classic Espresso</h3>
+                  <p class="description description--sm">
+                    Bold, rich espresso with a smooth finish.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$3.00</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Classic Espresso"
+                      aria-label="Order Classic Espresso"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="coffee">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/latte.png"
+                  alt="Classic latte"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">COFFEE</span>
+                  <h3 class="card__title">Classic Latte</h3>
+                  <p class="description description--sm">
+                    Espresso blended with silky steamed milk.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$4.50</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Classic Latte"
+                      aria-label="Order Classic Latte"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="coffee">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/caramel-Iced-Latte.png"
+                  alt="Iced caramel latte"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">COFFEE</span>
+                  <h3 class="card__title">Iced Caramel Latte</h3>
+                  <p class="description description--sm">
+                    Smooth espresso, cold milk and sweet caramel.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$5.50</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Iced Caramel Latte"
+                      aria-label="Order Iced Caramel Latte"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- COLD DRINKS -->
+
+            <article class="card" data-category="cold">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/iced-americano.png"
+                  alt="Iced Americano"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">COLD DRINKS</span>
+                  <h3 class="card__title">Iced Americano</h3>
+                  <p class="description description--sm">
+                    Refreshing espresso served over ice and water.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$4.00</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Iced Americano"
+                      aria-label="Order Iced Americano"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="cold">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/cold-coffee.png"
+                  alt="Iced coffee"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">COLD DRINKS</span>
+                  <h3 class="card__title">Iced Coffee</h3>
+                  <p class="description description--sm">
+                    Chilled coffee with creamy milk and a smooth taste.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$4.50</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Iced Coffee"
+                      aria-label="Order Iced Coffee"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- TEA & MATCHA -->
+
+            <article class="card" data-category="tea">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/matcha-latte.png"
+                  alt="Matcha latte"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">TEA & MATCHA</span>
+                  <h3 class="card__title">Matcha Latte</h3>
+                  <p class="description description--sm">
+                    Earthy matcha blended with creamy milk.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$5.00</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Matcha Latte"
+                      aria-label="Order Matcha Latte"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="tea">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/green-tea.png"
+                  alt="Green tea"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">TEA & MATCHA</span>
+                  <h3 class="card__title">Classic Green Tea</h3>
+                  <p class="description description--sm">
+                    A light, calming tea with a delicate flavour.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$3.50</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Classic Green Tea"
+                      aria-label="Order Classic Green Tea"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- BAKERY & DESSERTS -->
+
+            <article class="card" data-category="bakery">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/croissant.png"
+                  alt="Butter croissant"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">BAKERY & DESSERTS</span>
+                  <h3 class="card__title">Butter Croissant</h3>
+                  <p class="description description--sm">
+                    Golden, flaky and freshly baked.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$3.50</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Butter Croissant"
+                      aria-label="Order Butter Croissant"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="bakery">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/chocolate-brownie.png"
+                  alt="Chocolate brownie"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">BAKERY & DESSERTS</span>
+                  <h3 class="card__title">Chocolate Brownie</h3>
+                  <p class="description description--sm">
+                    Rich chocolate, soft centre, pure indulgence.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$4.00</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Chocolate Brownie"
+                      aria-label="Order Chocolate Brownie"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="bakery">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/cheesecake.png"
+                  alt="Creamy cheesecake"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">BAKERY & DESSERTS</span>
+                  <h3 class="card__title">Classic Cheesecake</h3>
+                  <p class="description description--sm">
+                    Creamy cheesecake with a buttery biscuit base.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$5.00</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Classic Cheesecake"
+                      aria-label="Order Classic Cheesecake"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="bakery">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/cinnamon-roll.png"
+                  alt="Fresh cinnamon roll"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">BAKERY & DESSERTS</span>
+                  <h3 class="card__title">Cinnamon Roll</h3>
+                  <p class="description description--sm">
+                    Soft baked pastry with warm cinnamon and glaze.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$4.00</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Cinnamon Roll"
+                      aria-label="Order Cinnamon Roll"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-category="bakery">
+              <div class="card-img">
+                <img
+                  src="./assets/images/menu/blueberry-muffin.png"
+                  alt="Fresh blueberry muffin"
+                  class="card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-inner-box">
+                <div class="card__info">
+                  <span class="card-category">BAKERY & DESSERTS</span>
+                  <h3 class="card__title">Blueberry Muffin</h3>
+                  <p class="description description--sm">
+                    Soft, fluffy muffin baked with juicy blueberries.
+                  </p>
+                  <div class="card-pricing">
+                    <p class="price">$3.75</p>
+                    <a
+                      href="#"
+                      class="card__btn order-btn"
+                      data-product="Blueberry Muffin"
+                      aria-label="Order Blueberry Muffin"
+                    >
+                      <i class="ri-add-large-line" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOTTOM CTA -->
+      <section class="menu-bottom">
+        <div class="container">
+          <div class="content-box">
+            <span class="eyebrow">YOUR NEXT FAVOURITE IS WAITING</span>
+            <h2 class="section-title">Good Things Start with Coffee.</h2>
+            <p class="description description--body">
+              Found something you love? Get in touch and place your order.
+            </p>
+            <a
+              href="./index.html#visit-us"
+              class="btn btn--primary btn--section"
+            >
+              Visit ROVA
+              <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid">
+          <div class="footer-col">
+            <div>
+              <a href="#home" class="logo" aria-label="Go to home page">
+                <i class="ti ti-plant-2 logo__icon" aria-hidden="true"></i>
+                ROVA
+              </a>
+            </div>
+
+            <p class="title footer-title">Coffee. Food. Good Moments.</p>
+            <p class="description description--sm">
+              A little coffee, a little happiness.
+            </p>
+            <div class="cta-box footer-social">
+              <a
+                href="facebook.com/purespace"
+                class="social-link"
+                aria-label="Facebook"
+              >
+                <i class="ri-facebook-fill" aria-hidden="true"></i>
+              </a>
+              <a
+                href="instagram.com/purespace"
+                class="social-link"
+                aria-label="Instagram"
+              >
+                <i class="ri-instagram-fill" aria-hidden="true"></i>
+              </a>
+              <a
+                href="youtube.com/purespace"
+                class="social-link"
+                aria-label="YouTube"
+              >
+                <i class="ri-youtube-fill" aria-hidden="true"></i>
+              </a>
+              <a
+                href="tiktok.com/purespace"
+                class="social-link"
+                aria-label="TikTok"
+              >
+                <i class="ri-tiktok-fill" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Contact</h3>
+            <p>WhatsApp: +1 (555) 0143</p>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Opening Hours</h3>
+            <p>Monday – Sunday</p>
+            <p>7:00 AM – 9:00 PM</p>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Quick Links</h3>
+            <nav aria-label="Footer Navigation">
+              <ul class="nav-list">
+                <li>
+                  <a href="#home" class="footer-link">Home</a>
+                </li>
+                <li>
+                  <a href="#favourites" class="footer-link">Favourites</a>
+                </li>
+                <li>
+                  <a href="#about" class="footer-link">About</a>
+                </li>
+                <li>
+                  <a href="#visit-us" class="footer-link">Visit Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>© 2026 ROVA Coffee House, Suraj Madhushan</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
